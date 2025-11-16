@@ -1,0 +1,372 @@
+[
+  {
+    "id": "saarc",
+    "name": "SAARC",
+    "category": "Cultural",
+    "logo": "🎭",
+    "shortDescription": "South Asian cultural society celebrating diversity and traditions",
+    "whatTheyDo": "Organize cultural events, festivals, and celebrations showcasing South Asian heritage through music, dance, and art.",
+    "whyJoin": [
+      "Connect with South Asian culture and traditions",
+      "Participate in vibrant festivals and celebrations",
+      "Build a diverse community network",
+      "Showcase your cultural talents"
+    ],
+    "whyNotJoin": [
+      "Requires time commitment for event planning",
+      "May involve weekend activities",
+      "Cultural performances can be demanding"
+    ],
+    "skillLevel": "Beginner",
+    "effort": "Medium",
+    "idealPerson": "Someone passionate about cultural diversity, enjoys event planning, and loves celebrating traditions",
+    "exclusivity": "Open for All",
+    "pastEvents": [
+      "Diwali Night - Grand festival celebration",
+      "Cultural Showcase - Music and dance performances",
+      "Heritage Week - Cultural workshops"
+    ]
+  },
+  {
+    "id": "dossom",
+    "name": "DOSSOM",
+    "category": "Cultural",
+    "logo": "🎤",
+    "shortDescription": "Department of Stage, Sound, and Music - campus entertainment hub",
+    "whatTheyDo": "Manage stage performances, sound systems, and music events across campus. Handle technical aspects of all major shows.",
+    "whyJoin": [
+      "Learn professional sound engineering",
+      "Get hands-on experience with stage equipment",
+      "Work on major campus events",
+      "Build technical and creative skills"
+    ],
+    "whyNotJoin": [
+      "Physically demanding work during events",
+      "Late night setup and teardown",
+      "Requires technical knowledge commitment"
+    ],
+    "skillLevel": "Medium",
+    "effort": "High",
+    "idealPerson": "Tech-savvy individuals who enjoy behind-the-scenes work, have patience for technical details, and don't mind irregular hours",
+    "exclusivity": "Selective",
+    "pastEvents": [
+      "Spring Fest - Complete technical management",
+      "Freshers Night - Sound and lighting setup",
+      "Annual Day - Multi-stage coordination"
+    ]
+  },
+  {
+    "id": "dopy",
+    "name": "DOPY",
+    "category": "Cultural",
+    "logo": "📸",
+    "shortDescription": "Department of Photography - capturing campus memories",
+    "whatTheyDo": "Cover all campus events through photography and videography. Create visual stories and maintain campus archives.",
+    "whyJoin": [
+      "Improve photography skills professionally",
+      "Access to premium camera equipment",
+      "Portfolio building opportunities",
+      "Free entry to all campus events"
+    ],
+    "whyNotJoin": [
+      "Must be available during most events",
+      "Equipment handling responsibility",
+      "Post-processing work can be time-consuming"
+    ],
+    "skillLevel": "Beginner",
+    "effort": "Medium",
+    "idealPerson": "Creative individuals with an eye for detail, patient with editing work, and willing to capture moments rather than just attend events",
+    "exclusivity": "Open for All",
+    "pastEvents": [
+      "Convocation 2024 - Official photography",
+      "Sports Meet - Action photography coverage",
+      "Campus Tour Series - Promotional content"
+    ]
+  },
+  {
+    "id": "dosar",
+    "name": "DOSAR",
+    "category": "Cultural",
+    "logo": "🎨",
+    "shortDescription": "Department of Art - expressing creativity through visual arts",
+    "whatTheyDo": "Organize art exhibitions, workshops, and creative sessions. Handle all visual design needs for campus events.",
+    "whyJoin": [
+      "Express creativity freely",
+      "Learn various art techniques",
+      "Showcase work in exhibitions",
+      "Design for major campus events"
+    ],
+    "whyNotJoin": [
+      "Materials can be expensive initially",
+      "Requires regular practice commitment",
+      "Deadline pressure for event designs"
+    ],
+    "skillLevel": "Beginner",
+    "effort": "Medium",
+    "idealPerson": "Creative minds who enjoy visual expression, patient with iterative work, and open to artistic experimentation",
+    "exclusivity": "Open for All",
+    "pastEvents": [
+      "Annual Art Exhibition - Student showcase",
+      "Live Painting Competition - Timed challenges",
+      "Campus Beautification - Mural projects"
+    ]
+  },
+  {
+    "id": "dofam",
+    "name": "DOFAM",
+    "category": "Cultural",
+    "logo": "🎬",
+    "shortDescription": "Department of Films and Media - storytelling through cinema",
+    "whatTheyDo": "Create short films, documentaries, and media content. Screen movies and organize film appreciation sessions.",
+    "whyJoin": [
+      "Learn filmmaking and editing",
+      "Work with professional equipment",
+      "Participate in film festivals",
+      "Build a creative portfolio"
+    ],
+    "whyNotJoin": [
+      "Shooting schedules can be demanding",
+      "Requires coordination with large teams",
+      "Post-production is time-intensive"
+    ],
+    "skillLevel": "Medium",
+    "effort": "High",
+    "idealPerson": "Storytellers who are passionate about cinema, comfortable with collaborative work, and willing to invest time in production",
+    "exclusivity": "Selective",
+    "pastEvents": [
+      "Campus Chronicles - Documentary series",
+      "48-hour Film Challenge - Intense competition",
+      "Film Festival - Screening and discussions"
+    ]
+  },
+  {
+    "id": "fmac",
+    "name": "FMAC",
+    "category": "Cultural",
+    "logo": "🎵",
+    "shortDescription": "Film Music and Arts Club - harmony of sound and vision",
+    "whatTheyDo": "Blend music, film, and performing arts. Organize concerts, music productions, and multimedia performances.",
+    "whyJoin": [
+      "Perform at major events",
+      "Collaborate with talented musicians",
+      "Learn music production",
+      "Access to music studios"
+    ],
+    "whyNotJoin": [
+      "Regular practice sessions mandatory",
+      "Performance anxiety for stage shows",
+      "Music equipment costs"
+    ],
+    "skillLevel": "Medium",
+    "effort": "High",
+    "idealPerson": "Musicians and performers who love collaboration, aren't afraid of stage presence, and enjoy fusion of different art forms",
+    "exclusivity": "Selective",
+    "pastEvents": [
+      "Spring Concert - Live band performances",
+      "Music Production Workshop - Studio skills",
+      "Acoustic Night - Intimate performances"
+    ]
+  },
+  {
+    "id": "devsoc",
+    "name": "Devsoc",
+    "category": "Technical",
+    "logo": "💻",
+    "shortDescription": "Developer's Society - coding and software development community",
+    "whatTheyDo": "Conduct hackathons, coding workshops, and tech talks. Build projects and prepare students for tech careers.",
+    "whyJoin": [
+      "Learn latest tech stacks",
+      "Participate in hackathons",
+      "Build real-world projects",
+      "Network with industry professionals"
+    ],
+    "whyNotJoin": [
+      "Steep learning curve for beginners",
+      "Time-consuming projects",
+      "Constantly evolving technology requires continuous learning"
+    ],
+    "skillLevel": "Medium",
+    "effort": "High",
+    "idealPerson": "Problem-solvers who love coding, are comfortable with self-learning, and enjoy building things from scratch",
+    "exclusivity": "Selective",
+    "pastEvents": [
+      "DevHack 2024 - 36-hour hackathon",
+      "Web Dev Bootcamp - Full-stack training",
+      "Tech Talk Series - Industry speakers"
+    ]
+  },
+  {
+    "id": "erc",
+    "name": "ERC",
+    "category": "Technical",
+    "logo": "🤖",
+    "shortDescription": "Electronics and Robotics Club - building intelligent machines",
+    "whatTheyDo": "Design robots, work on electronics projects, and compete in technical competitions. Focus on hardware and embedded systems.",
+    "whyJoin": [
+      "Build actual robots and circuits",
+      "Compete in robotics competitions",
+      "Learn PCB design and embedded systems",
+      "Access to workshop and tools"
+    ],
+    "whyNotJoin": [
+      "Components can be expensive",
+      "Requires physics and electronics knowledge",
+      "Debugging hardware is frustrating",
+      "Competition preparation is intense"
+    ],
+    "skillLevel": "Tough",
+    "effort": "High",
+    "idealPerson": "Hands-on learners who enjoy tinkering with hardware, have patience for debugging, and aren't afraid of soldering irons",
+    "exclusivity": "Selective",
+    "pastEvents": [
+      "Robowar Championship - Combat robotics",
+      "Line Follower Competition - Autonomous bots",
+      "Arduino Workshop Series - Basics to advanced"
+    ]
+  },
+  {
+    "id": "saidl",
+    "name": "SAIDL",
+    "category": "Technical",
+    "logo": "🧠",
+    "shortDescription": "Society for AI and Deep Learning - exploring machine intelligence",
+    "whatTheyDo": "Research and implement AI/ML projects. Study neural networks, computer vision, and natural language processing.",
+    "whyJoin": [
+      "Work on cutting-edge AI technology",
+      "Access to GPU resources",
+      "Research paper opportunities",
+      "Prepare for AI careers"
+    ],
+    "whyNotJoin": [
+      "Requires strong math background",
+      "Computing resources intensive",
+      "Very competitive environment",
+      "Long training times for models"
+    ],
+    "skillLevel": "Extremely Competitive",
+    "effort": "High",
+    "idealPerson": "Math enthusiasts who love data, are comfortable with research papers, and have patience for model training iterations",
+    "exclusivity": "Highly Selective",
+    "pastEvents": [
+      "ML Hackathon - Kaggle-style competition",
+      "Deep Learning Workshop - Neural networks",
+      "Research Paper Reading Group - Weekly sessions"
+    ]
+  },
+  {
+    "id": "algomaniax",
+    "name": "Algomaniax",
+    "category": "Technical",
+    "logo": "📊",
+    "shortDescription": "Competitive programming club - mastering algorithms and data structures",
+    "whatTheyDo": "Train for coding competitions, solve algorithmic problems, and prepare for technical interviews at top companies.",
+    "whyJoin": [
+      "Ace technical interviews",
+      "Compete in ICPC and other contests",
+      "Improve problem-solving skills",
+      "Prepare for competitive exams"
+    ],
+    "whyNotJoin": [
+      "Extremely time-demanding",
+      "Can be demotivating for beginners",
+      "High-pressure competitive environment",
+      "Steep difficulty curve"
+    ],
+    "skillLevel": "Extremely Competitive",
+    "effort": "High",
+    "idealPerson": "Logical thinkers who enjoy puzzles, can handle competitive pressure, and are willing to grind through difficult problems",
+    "exclusivity": "Highly Selective",
+    "pastEvents": [
+      "ICPC Regionals - Team competition",
+      "Weekly Contest Series - Practice sessions",
+      "Interview Prep Bootcamp - DSA training"
+    ]
+  },
+  {
+    "id": "athletics",
+    "name": "Athletics",
+    "category": "Sports",
+    "logo": "🏃",
+    "shortDescription": "Track and field club - speed, endurance, and athletic excellence",
+    "whatTheyDo": "Train for track and field events, organize sports meets, and represent college in inter-college competitions.",
+    "whyJoin": [
+      "Improve fitness and endurance",
+      "Compete at various levels",
+      "Structured training programs",
+      "Inter-college representation"
+    ],
+    "whyNotJoin": [
+      "Daily early morning practice",
+      "Risk of injuries",
+      "Strict fitness regimen",
+      "Weather-dependent training"
+    ],
+    "skillLevel": "Medium",
+    "effort": "High",
+    "idealPerson": "Athletic individuals who enjoy outdoor activities, have discipline for regular training, and love competitive sports",
+    "exclusivity": "Open for All",
+    "pastEvents": [
+      "Annual Sports Meet - Track events",
+      "Inter-College Marathon - Long distance",
+      "Relay Championship - Team events"
+    ]
+  },
+  {
+    "id": "bgsc",
+    "name": "BGSC",
+    "category": "Sports",
+    "logo": "⚽",
+    "shortDescription": "Ball Games and Sports Club - team sports and recreation",
+    "whatTheyDo": "Organize football, basketball, volleyball, and other ball games. Conduct tournaments and coaching sessions.",
+    "whyJoin": [
+      "Play multiple sports",
+      "Team building experience",
+      "Regular matches and tournaments",
+      "Improve physical fitness"
+    ],
+    "whyNotJoin": [
+      "Risk of sports injuries",
+      "Evening practice sessions",
+      "Equipment maintenance responsibility",
+      "Competitive team selection"
+    ],
+    "skillLevel": "Beginner",
+    "effort": "Medium",
+    "idealPerson": "Team players who enjoy ball sports, are comfortable with physical activity, and like recreational competition",
+    "exclusivity": "Open for All",
+    "pastEvents": [
+      "Football League - Semester tournament",
+      "Basketball 3v3 - Quick matches",
+      "Volleyball Championship - Inter-batch"
+    ]
+  },
+  {
+    "id": "dojma",
+    "name": "DOJMA",
+    "category": "Cultural",
+    "logo": "🎪",
+    "shortDescription": "Department of Journalism and Mass Arts - media and communication",
+    "whatTheyDo": "Manage campus newsletter, conduct interviews, write articles, and handle PR for college events.",
+    "whyJoin": [
+      "Develop writing and communication skills",
+      "Interview interesting people",
+      "Build journalism portfolio",
+      "Inside access to all events"
+    ],
+    "whyNotJoin": [
+      "Tight deadlines for articles",
+      "Constant pressure for content",
+      "Requires good writing skills",
+      "Evening coverage of events"
+    ],
+    "skillLevel": "Beginner",
+    "effort": "Medium",
+    "idealPerson": "Curious individuals who love storytelling, are comfortable with writing, and enjoy meeting new people",
+    "exclusivity": "Open for All",
+    "pastEvents": [
+      "Campus Newsletter - Monthly publication",
+      "Interview Series - Faculty and alumni",
+      "Event Coverage - Live reporting"
+    ]
+  }
+]

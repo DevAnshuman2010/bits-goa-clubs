@@ -1,0 +1,152 @@
+[
+  {
+    "id": "evt1",
+    "club": "devsoc",
+    "clubName": "Devsoc",
+    "title": "DevHack 2025 - 36 Hour Hackathon",
+    "date": "2025-01-15",
+    "description": "Build innovative projects, win prizes, and network with industry mentors.",
+    "location": "Computer Lab & Seminar Hall",
+    "time": "9:00 AM onwards"
+  },
+  {
+    "id": "evt2",
+    "club": "dopy",
+    "clubName": "DOPY",
+    "title": "Photography Workshop - Portrait Basics",
+    "date": "2025-01-18",
+    "description": "Learn portrait photography techniques, lighting, and composition.",
+    "location": "Media Room",
+    "time": "4:00 PM"
+  },
+  {
+    "id": "evt3",
+    "club": "saarc",
+    "clubName": "SAARC",
+    "title": "Lohri Celebration Night",
+    "date": "2025-01-13",
+    "description": "Traditional bonfire celebration with music, dance, and food.",
+    "location": "Main Ground",
+    "time": "6:00 PM"
+  },
+  {
+    "id": "evt4",
+    "club": "erc",
+    "clubName": "ERC",
+    "title": "Robowar Practice Session",
+    "date": "2025-01-20",
+    "description": "Test your combat robots and get feedback from seniors.",
+    "location": "ERC Workshop",
+    "time": "3:00 PM"
+  },
+  {
+    "id": "evt5",
+    "club": "fmac",
+    "clubName": "FMAC",
+    "title": "Open Mic Night",
+    "date": "2025-01-22",
+    "description": "Perform your original music, covers, or poetry in front of a supportive audience.",
+    "location": "Auditorium",
+    "time": "7:00 PM"
+  },
+  {
+    "id": "evt6",
+    "club": "algomaniax",
+    "clubName": "Algomaniax",
+    "title": "Weekly Contest #8",
+    "date": "2025-01-17",
+    "description": "Solve 5 problems in 2 hours. Top performers get exclusive mentorship.",
+    "location": "Online (CodeChef)",
+    "time": "8:00 PM"
+  },
+  {
+    "id": "evt7",
+    "club": "saidl",
+    "clubName": "SAIDL",
+    "title": "Computer Vision Workshop",
+    "date": "2025-01-25",
+    "description": "Hands-on session on image classification using CNNs and transfer learning.",
+    "location": "AI Lab",
+    "time": "2:00 PM"
+  },
+  {
+    "id": "evt8",
+    "club": "athletics",
+    "clubName": "Athletics",
+    "title": "5K Morning Run",
+    "date": "2025-01-14",
+    "description": "Group run around campus. All fitness levels welcome!",
+    "location": "Main Gate",
+    "time": "6:00 AM"
+  },
+  {
+    "id": "evt9",
+    "club": "bgsc",
+    "clubName": "BGSC",
+    "title": "Basketball 3v3 Tournament",
+    "date": "2025-01-19",
+    "description": "Quick half-court games, form your team of 3 and compete.",
+    "location": "Basketball Court",
+    "time": "5:00 PM"
+  },
+  {
+    "id": "evt10",
+    "club": "dofam",
+    "clubName": "DOFAM",
+    "title": "Short Film Screening & Discussion",
+    "date": "2025-01-21",
+    "description": "Watch award-winning short films followed by analysis and discussion.",
+    "location": "Mini Auditorium",
+    "time": "6:30 PM"
+  },
+  {
+    "id": "evt11",
+    "club": "dossom",
+    "clubName": "DOSSOM",
+    "title": "Sound Engineering Basics",
+    "date": "2025-01-16",
+    "description": "Learn mixing, mic placement, and audio setup for live events.",
+    "location": "Auditorium (Backstage)",
+    "time": "4:30 PM"
+  },
+  {
+    "id": "evt12",
+    "club": "dosar",
+    "clubName": "DOSAR",
+    "title": "Live Sketching Competition",
+    "date": "2025-01-23",
+    "description": "2-hour timed sketching competition with exciting prizes.",
+    "location": "Art Room",
+    "time": "3:00 PM"
+  },
+  {
+    "id": "evt13",
+    "club": "dojma",
+    "clubName": "DOJMA",
+    "title": "Feature Writing Workshop",
+    "date": "2025-01-24",
+    "description": "Learn to write engaging feature articles and human interest stories.",
+    "location": "Library Seminar Hall",
+    "time": "5:00 PM"
+  },
+  {
+    "id": "evt14",
+    "club": "devsoc",
+    "clubName": "Devsoc",
+    "title": "Git & GitHub Masterclass",
+    "date": "2025-01-26",
+    "description": "Collaborative coding, version control, and open source contributions.",
+    "location": "Computer Lab 2",
+    "time": "3:30 PM"
+  },
+  {
+    "id": "evt15",
+    "club": "saarc",
+    "clubName": "SAARC",
+    "title": "Cultural Dance Workshop",
+    "date": "2025-01-27",
+    "description": "Learn traditional South Asian dance forms from expert instructors.",
+    "location": "Dance Studio",
+    "time": "5:30 PM"
+  }
+]

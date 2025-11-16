@@ -1,65 +1,55 @@
-import { BookOpen, Users, Trophy, Camera, Code, Book, Music, Palette } from "lucide-react";
+import { useState, useEffect } from "react";
+import { BookOpen, Eye } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import ClubDetail from "./ClubDetail";
+import { useClubFollow } from "@/hooks/useClubFollow";
+
+interface Club {
+  id: string;
+  name: string;
+  category: string;
+  logo: string;
+  shortDescription: string;
+  whatTheyDo: string;
+  whyJoin: string[];
+  whyNotJoin: string[];
+  skillLevel: string;
+  effort: string;
+  idealPerson: string;
+  exclusivity: string;
+  pastEvents: string[];
+}
 
 const ClubGuide = () => {
-  const allClubs = [
-    {
-      id: 1,
-      name: "Photography Club",
-      description: "Learn photography techniques and capture stunning moments",
-      members: 45,
-      icon: Camera,
-      category: "Arts",
-      joined: true
-    },
-    {
-      id: 2,
-      name: "Tech Club",
-      description: "Explore coding, robotics, and technology innovations",
-      members: 67,
-      icon: Code,
-      category: "Technology",
-      joined: true
-    },
-    {
-      id: 3,
-      name: "Book Club",
-      description: "Discuss literature and share reading experiences",
-      members: 32,
-      icon: Book,
-      category: "Literature",
-      joined: true
-    },
-    {
-      id: 4,
-      name: "Music Club",
-      description: "Create and perform music together",
-      members: 38,
-      icon: Music,
-      category: "Arts",
-      joined: false
-    },
-    {
-      id: 5,
-      name: "Art Club",
-      description: "Express creativity through various art forms",
-      members: 41,
-      icon: Palette,
-      category: "Arts",
-      joined: false
-    },
-    {
-      id: 6,
-      name: "Sports Club",
-      description: "Stay active and competitive in various sports",
-      members: 89,
-      icon: Trophy,
-      category: "Sports",
-      joined: false
-    }
-  ];
+  const [clubs, setClubs] = useState<Club[]>([]);
+  const [selectedClub, setSelectedClub] = useState<Club | null>(null);
+  const { followedClubs, followClub, unfollowClub, isFollowing } = useClubFollow();
+
+  useEffect(() => {
+    fetch('/data/clubs.json')
+      .then(res => res.json())
+      .then(data => setClubs(data))
+      .catch(err => console.error('Error loading clubs:', err));
+  }, []);
+
+  if (selectedClub) {
+    return (
+      <ClubDetail
+        club={selectedClub}
+        isFollowing={isFollowing(selectedClub.id)}
+        onBack={() => setSelectedClub(null)}
+        onToggleFollow={() => {
+          if (isFollowing(selectedClub.id)) {
+            unfollowClub(selectedClub.id);
+          } else {
+            followClub(selectedClub.id);
+          }
+        }}
+      />
+    );
+  }
 
   return (
     <div className="space-y-4">
@@ -69,48 +59,40 @@ const ClubGuide = () => {
       </div>
 
       <p className="text-muted-foreground">
-        Discover and join clubs that match your interests
+        Discover all {clubs.length} clubs and find your perfect match
       </p>
 
       <div className="grid gap-4">
-        {allClubs.map((club) => {
-          const Icon = club.icon;
-          
-          return (
-            <Card key={club.id} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
-              <div className="h-1 bg-gradient-to-r from-primary to-secondary" />
-              <CardHeader>
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <Icon className="w-6 h-6 text-primary" />
+        {clubs.map((club) => (
+          <Card key={club.id} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+            <div className="h-1 bg-gradient-to-r from-primary to-secondary" />
+            <CardHeader>
+              <div className="flex items-start gap-4">
+                <div className="text-5xl">{club.logo}</div>
+                <div className="flex-1 space-y-1">
+                  <div className="flex items-start justify-between gap-2">
+                    <CardTitle className="text-xl">{club.name}</CardTitle>
+                    <Badge variant="secondary">{club.category}</Badge>
                   </div>
-                  <div className="flex-1 space-y-1">
-                    <div className="flex items-start justify-between">
-                      <CardTitle className="text-xl">{club.name}</CardTitle>
-                      <Badge variant="secondary">{club.category}</Badge>
-                    </div>
-                    <CardDescription>{club.description}</CardDescription>
-                  </div>
+                  <CardDescription>{club.shortDescription}</CardDescription>
+                  {isFollowing(club.id) && (
+                    <Badge variant="default" className="mt-2">Following</Badge>
+                  )}
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Users className="w-4 h-4" />
-                  <span>{club.members} members</span>
-                </div>
-                {club.joined ? (
-                  <Button className="w-full" variant="outline" disabled>
-                    Already Joined
-                  </Button>
-                ) : (
-                  <Button className="w-full">
-                    Join Club
-                  </Button>
-                )}
-              </CardContent>
-            </Card>
-          );
-        })}
+              </div>
+            </CardHeader>
+            <CardContent>
+              <Button 
+                className="w-full" 
+                variant="outline"
+                onClick={() => setSelectedClub(club)}
+              >
+                <Eye className="w-4 h-4 mr-2" />
+                View Details
+              </Button>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </div>
   );

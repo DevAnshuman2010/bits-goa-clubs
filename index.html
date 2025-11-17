@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClubHub - Manage Your Club Life</title>
-    <meta name="description" content="Discover, join, and manage your clubs all in one place. View upcoming events, track your memberships, and explore new clubs." />
-    
+    <meta name="description" content="Discover, join, and manage your clubs all in one place. View upcoming events, track your memberships, and explore new clubs.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,81 +14,84 @@
             <h1>ClubHub</h1>
         </header>
 
-        <!-- Main Content Area -->
-        <main id="main-content">
+        <!-- Main Content -->
+        <main class="main-content">
             <!-- Club Guide View -->
-            <div id="club-guide-view" class="view active">
+            <section id="club-guide" class="view active">
                 <div class="view-header">
                     <h2>Club Guide</h2>
-                    <p>Explore all available clubs</p>
+                    <p class="view-subtitle">Explore all available clubs</p>
                 </div>
-                <div id="club-list" class="club-grid"></div>
-            </div>
+                <div id="clubs-container" class="clubs-grid"></div>
+            </section>
 
             <!-- My Clubs View -->
-            <div id="my-clubs-view" class="view">
+            <section id="my-clubs" class="view">
                 <div class="view-header">
                     <h2>My Clubs</h2>
-                    <p>Your followed clubs and updates</p>
+                    <p class="view-subtitle">Your followed clubs and updates</p>
                 </div>
-                <div id="followed-clubs-section">
-                    <h3>Following</h3>
-                    <div id="followed-clubs-list" class="followed-list"></div>
+                
+                <div class="my-clubs-section">
+                    <h3 class="section-title">Following</h3>
+                    <div id="following-container" class="following-grid"></div>
                 </div>
-                <div id="updates-section">
-                    <h3>Latest Updates</h3>
-                    <div id="updates-list" class="updates-list"></div>
+
+                <div class="my-clubs-section">
+                    <h3 class="section-title">Latest Updates</h3>
+                    <div id="updates-container" class="updates-grid"></div>
                 </div>
-            </div>
+            </section>
 
             <!-- Calendar View -->
-            <div id="calendar-view" class="view">
+            <section id="calendar" class="view">
                 <div class="view-header">
                     <h2>Calendar</h2>
-                    <p>Upcoming events from all clubs</p>
+                    <p class="view-subtitle">Upcoming events from all clubs</p>
                 </div>
-                <div id="calendar-list" class="calendar-list"></div>
-            </div>
-
-            <!-- Club Detail Modal -->
-            <div id="club-detail-modal" class="modal">
-                <div class="modal-content">
-                    <button class="modal-close" onclick="closeClubDetail()">&times;</button>
-                    <div id="club-detail-content"></div>
-                </div>
-            </div>
+                <div id="calendar-container"></div>
+            </section>
         </main>
+
+        <!-- Club Detail Modal -->
+        <div id="club-modal" class="modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+                <div id="club-detail"></div>
+            </div>
+        </div>
 
         <!-- Bottom Navigation -->
         <nav class="bottom-nav">
-            <button class="nav-btn" data-view="club-guide-view">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            <button class="nav-btn active" data-view="club-guide" onclick="switchView('club-guide')">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
                 </svg>
-                <span>Guide</span>
+                <span class="nav-label">Guide</span>
             </button>
-            <button class="nav-btn" data-view="my-clubs-view">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            <button class="nav-btn" data-view="my-clubs" onclick="switchView('my-clubs')">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                 </svg>
-                <span>My Clubs</span>
+                <span class="nav-label">My Clubs</span>
             </button>
-            <button class="nav-btn" data-view="calendar-view">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                    <line x1="3" y1="10" x2="21" y2="10"></line>
+            <button class="nav-btn" data-view="calendar" onclick="switchView('calendar')">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
                 </svg>
-                <span>Calendar</span>
+                <span class="nav-label">Calendar</span>
             </button>
         </nav>
     </div>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
